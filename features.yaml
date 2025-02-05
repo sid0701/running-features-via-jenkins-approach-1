@@ -1,6 +1,6 @@
 version: "3"
 services:
-  vendor_portal_test:
+  features:
     image: sid0701/java-selenium-cucumber-docker-1
     environment:
       - HUB_HOST=hub
