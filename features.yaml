@@ -1,0 +1,11 @@
+version: "3"
+services:
+  vendor_portal_test:
+    image: sid0701/java-selenium-cucumber-docker-1
+    environment:
+      - HUB_HOST=hub
+      - BROWSER=chrome
+      - THREAD_COUNT=2
+      - TAGS=@FlightSearch
+    volumes:
+      - ./docker-output/:/home/output/
